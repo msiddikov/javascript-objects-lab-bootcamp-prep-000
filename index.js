@@ -10,7 +10,7 @@ function updateObjectWithKeyAndValue(object, key, value){
 }
 
 function deleteFromObjectByKey(object, key){
-  var newO =  object;
+  var newO =  Object.assign(object);
   delete newO[key];
   return newO;
 }
